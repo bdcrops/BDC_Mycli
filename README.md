@@ -3,6 +3,26 @@
 This module is used as a Mycli for all BDCrops Magento 2 extensions.
 
 
+## Goal:
+
+- 1.1 Create Simple Cli Command
+- 1.2 Create Advanced Command
+
+## <a name="top"> Magento 2 CLI Module Step By Step (BDCrops) </a>
+
+##  [Part A : News Module for Basic & Simple Cli](#PartA)
+- [Step 2A.1: Create a directory for the module like above format](#Step2A1)
+- [Step 2A.2: Declare module by using configuration file module.xml](#Step2A2)
+- [Step 2A.3: Register module by registration.php](#Step2A3)
+- [Step 2A.4: DI module by di.xml](#Step2A4)
+- [Step 2A.5: Register module by registration.php](#Step2A5)
+
+##  [Part B : News Module for Advanced Command](#PartB)
+
+- [Step 2B.1: Adding a new command Dependency Injection](#Step2B1)
+- [Step 2B.2: Adding a new command class](#Step2B2)
+- [Step 2B.3: Adding a new command Helper class ](#Step2B3)
+
 
 
 
@@ -138,7 +158,7 @@ php bin/magento bdcrops:sayhello
 ![sayHello](https://github.com/bdcrops/BDC_Mycli/blob/master/doc/sayHelloCli.png)
 
 
-### <a name="Step2B1"> Step 2B.1: Adding a new command </a>
+### <a name="Step2B1"> Step 2B.1: Adding a new command  Dependency Injection</a>
 
 Adding a new command to CLI is based on passing on the argument from the XML level to the class Magento\Framework\Console\CommandList. Dependency Injection comes in handy here. Let’s  
 
@@ -159,7 +179,7 @@ Edit/Create  app/code/BDC/Mycli/etc/di.xml and insert this following code into i
 </config>
 
 ```
-### <a name="Step2B2"> Step 2B.2: Adding a new command </a>
+### <a name="Step2B2"> Step 2B.2: Adding a new command  class</a>
 We add the object responsible for executing the script to the class Magento\Framework\Console\CommandList. The constructor of this class is simply an array where class objects are passed on in a similar manner as in the above example.
 
 Let’s proceed to the next step – creating a class for our new command and a helper responsible for adding a new user:
