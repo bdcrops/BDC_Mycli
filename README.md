@@ -123,7 +123,8 @@ class Sayhello extends Command
 }
 
 ```
-
+Run Command:
+```
 php bin/magento setup:upgrade
 php bin/magento cache:clean
 php bin/magento list
