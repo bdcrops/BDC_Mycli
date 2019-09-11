@@ -326,6 +326,9 @@ Next, let’s add a new user according to the usage pattern.
   php bin/magento bdcrops:user:create --customer-firstname="Matin" --customer-lastname="Rahman" --customer-email="matin@bdcrops.com" --customer-password="matin@123" --website="1"
   ```
 
+![](https://github.com/bdcrops/BDC_Mycli/blob/master/doc/addDataCli.png)
+
+Database table will insert data as below:
 ![](https://github.com/bdcrops/BDC_Mycli/blob/master/doc/MyCliDBData.png)
 
 If we run the command again, we should get the following exception:
