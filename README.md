@@ -128,16 +128,17 @@ php bin/magento setup:upgrade
 php bin/magento cache:clean
 php bin/magento list
 ```
-[Mycli](https://github.com/bdcrops/BDC_Mycli/blob/master/doc/helloCli.png)
+![Mycli](https://github.com/bdcrops/BDC_Mycli/blob/master/doc/helloCli.png)
 
 ```
 php bin/magento bdcrops:sayhello
 
 ```
-[sayHello](https://github.com/bdcrops/BDC_Mycli/blob/master/doc/sayHelloCli.png)
+![sayHello](https://github.com/bdcrops/BDC_Mycli/blob/master/doc/sayHelloCli.png)
 
 
 
 
-
+```
   php bin/magento bdcrops:user:create --customer-firstname="Matin" --customer-lastname="Rahman" --customer-email="matin@bdcrops.com" --customer-password="matin@123" --website="1"
+  ```
