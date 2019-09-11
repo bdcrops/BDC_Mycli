@@ -567,25 +567,25 @@ php bin/magento setup:static-content:deploy [<languages>] [--theme[="<theme>"]]
 ```
 where
 
-<languages> – list of languages (language defined by code), which is separated with spaces. Static content is deployed only for specified languages; by default for en_US only (if the parameter is not specified). For example, en_US fr_FR.
-–theme [= “<theme>”] – list of topics which static content is deployed to (if the parameter is not set, then static content is deployed to all topics). For example, –theme Magento / blank –theme Magento / luma.
-–exclude-theme [= “<theme>”] – list of topics for which static content is NOT deployed. For example, –exclude-theme Magento / blank –exclude-theme Magento / luma.
-–language [= “<language>”] –  list of languages to which static content is deployed (if the parameter is not set, then static content is applied for all languages). For example, –language en_US –language es_ES. If you specify this parameter and the <languages> parameter (described above), then the <languages> parameter will have priority. For shorthand, use -l instead of –language (example: -l es_ES).
+- <languages> – list of languages (language defined by code), which is separated with spaces. Static content is deployed only for specified languages; by default for en_US only (if the parameter is not specified). For example, en_US fr_FR.
+- –theme [= “<theme>”] – list of topics which static content is deployed to (if the parameter is not set, then static content is deployed to all topics). For example, –theme Magento / blank –theme Magento / luma.
+- –exclude-theme [= “<theme>”] – list of topics for which static content is NOT deployed. For example, –exclude-theme Magento / blank –exclude-theme Magento / luma.
+- –language [= “<language>”] –  list of languages to which static content is deployed (if the parameter is not set, then static content is applied for all languages). For example, –language en_US –language es_ES. If you specify this parameter and the <languages> parameter (described above), then the <languages> parameter will have priority. For shorthand, use -l instead of –language (example: -l es_ES).
 –exclude-language [= “<language>”] – a list of languages for which static content is NOT deployed. For example, –exclude-language en_US –exclude-language es_ES.
-–area [= “<area>”] – list of areas to which static content is deployed (if the parameter is not set, then static content is deployed in all areas). For example, –area adminhtml. For shorthand use -a (example: -a adminhtml) instead of –area.
-–exclude-area [= “<area>”] – list of areas for which static content is NOT deployed. For example, –exclude-area adminhtml.
-–jobs [= “<number>”] – this option allows you to use a certain number of tasks in parallel processing (4 by default). For example, –jobs 1. For shorthand, use -j (example: -j 1) instead of –jobs .
-–no-javascript – with this parameter JavaScript files will not be deployed.
-–no-css – with this parameter CSS files will not be deployed.
-–no-less – with this parameter LESS files will not be deployed.
-–no-images – with this parameter images will not be deployed.
-–no-fonts – with this parameter font files will not be deployed.
-–no-html – with this parameter HTML files will not be deployed.
-–no-misc – with this parameter no other file types will deploy (for example, .md, .jbf, .csv, .json, .txt, .htc, or .swf).
-–no-html-minify – with this parameter HTML files will not be minified.
-–dry-run is a parameter that allows you to view output files without any changes.
-–force – deploy files in any mode. For shorthand use -f instead of –force .
-–verbose – change the amount of information in the deploy output. As a rule, the abbreviated form of the parameter is used, where -v is for minimum information on deployment (default value), -vv is for more detailed information, -vvv is used for debu
+- –area [= “<area>”] – list of areas to which static content is deployed (if the parameter is not set, then static content is deployed in all areas). For example, –area adminhtml. For shorthand use -a (example: -a adminhtml) instead of –area.
+- –exclude-area [= “<area>”] – list of areas for which static content is NOT deployed. For example, –exclude-area adminhtml.
+- –jobs [= “<number>”] – this option allows you to use a certain number of tasks in parallel processing (4 by default). For example, –jobs 1. For shorthand, use -j (example: -j 1) instead of –jobs .
+- –no-javascript – with this parameter JavaScript files will not be deployed.
+- –no-css – with this parameter CSS files will not be deployed.
+- –no-less – with this parameter LESS files will not be deployed.
+- –no-images – with this parameter images will not be deployed.
+- –no-fonts – with this parameter font files will not be deployed.
+- –no-html – with this parameter HTML files will not be deployed.
+- –no-misc – with this parameter no other file types will deploy (for example, .md, .jbf, .csv, .json, .txt, .htc, or .swf).
+- –no-html-minify – with this parameter HTML files will not be minified.
+- –dry-run is a parameter that allows you to view output files without any changes.
+- –force – deploy files in any mode. For shorthand use -f instead of –force .
+- –verbose – change the amount of information in the deploy output. As a rule, the abbreviated form of the parameter is used, where -v is for minimum information on deployment (default value), -vv is for more detailed information, -vvv is used for debu
 
 ### What are common mistakes during the process?
 During file deletion you may make the following mistakes, so please avoid them:
